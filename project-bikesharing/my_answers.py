@@ -92,7 +92,7 @@ class NeuralNetwork(object):
         
         # TODO: Backpropagated error terms - Replace these values with your calculations.
         output_error_term = error
-        # why not: error*final_outputs*(1-final_outputs) coz activation function f(x)=x, not sigmoid
+        # why not: error*final_outputs*(1-final_outputs) because activation function f(x)=x, not sigmoid
         
         # TODO: Calculate the hidden layer's contribution to the error
         hidden_error = np.dot(output_error_term,self.weights_hidden_to_output.T)
